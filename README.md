@@ -40,7 +40,17 @@ L'application (`app.py`) est organisée en trois pages :
 - **Regional Analysis** : indicateurs moyens d'une région au choix, son évolution dans le temps, et comparaison de toutes les régions pour une année donnée.
 - **Water Stress Map** : carte interactive de la consommation par région et classement des régions selon leur stress hydrique.
 
-<!-- Captures de l'application -->
+### Dashboard : vue nationale
+![Dashboard](images/dashboard.png)
+
+### Évolution du stress hydrique national
+![Tendance du stress hydrique](images/tendance-stress.png)
+
+### Carte de la consommation par région
+![Carte](images/carte.png)
+
+### Stress hydrique par région
+![Stress hydrique par région](images/stress-regions.png)
 
 ## Notebook d'analyse
 
