@@ -130,10 +130,10 @@ elif page == "Water Stress Map":
     
     # Calculate water stress for each region
     latest_year = df['year'].max()
-    latest_data = df[df['year'] == latest_year]
+    latest_data = df[df['year'] == latest_year].copy()
     
     # Create map
-    fig_map = px.scatter_mapbox(latest_data,
+    fig_map = px.scatter_map(latest_data,
                               lat="latitude",
                               lon="longitude",
                               size="consumption_m3",
@@ -143,7 +143,7 @@ elif page == "Water Stress Map":
                               zoom=5,
                               title="Regional Water Consumption Map")
     
-    fig_map.update_layout(mapbox_style="open-street-map")
+    fig_map.update_layout(map_style="open-street-map")
     st.plotly_chart(fig_map, use_container_width=True)
     
     # Water stress indicators
