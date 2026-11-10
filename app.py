@@ -140,7 +140,9 @@ elif page == "Water Stress Map":
                               color="consumption_m3",
                               hover_name="region",
                               hover_data=["consumption_m3", "availability_m3"],
-                              zoom=5,
+                              zoom=5.3,
+                              center={"lat": 34.2, "lon": 9.6},
+                              height=650,
                               title="Regional Water Consumption Map")
     
     fig_map.update_layout(map_style="open-street-map")
